@@ -110,6 +110,16 @@ public extension Chain {
             isEIP1559Supported: false
         )
     }
+    
+    static var nexus: Chain { 
+        Chain(
+            id: 3940,
+            coinType: 1,
+            syncInterval: 15,
+            gasLimit: 10_000_000,
+            isEIP1559Supported: true
+        )
+    }
 
     static var base: Chain {
         Chain(
