@@ -124,6 +124,6 @@ public extension TransactionSource {
     static func nexusExplorer(apiKeys: [String]) -> TransactionSource {
         TransactionSource(
             name: "testnet3.explorer.nexus.xyz",
-            type: .etherscan(apiBaseUrl: "https://testnet3.explorer.nexus.xyz/api", txBaseUrl: "https://testnet3.explorer.nexus.xyz", apiKeys: apiKeys))
+            type: .etherscan(apiBaseUrl: "https://testnet3.explorer.nexus.xyz/api/", txBaseUrl: "https://testnet3.explorer.nexus.xyz", apiKeys: apiKeys))
     }
 }
