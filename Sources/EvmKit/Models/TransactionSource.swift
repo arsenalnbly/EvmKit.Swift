@@ -120,4 +120,10 @@ public extension TransactionSource {
             type: .etherscan(apiBaseUrl: "https://api-era.zksync.network", txBaseUrl: "https://era.zksync.network", apiKeys: apiKeys)
         )
     }
+    
+    static func nexusExplorer(apiKeys: [String]) -> TransactionSource {
+        TransactionSource(
+            name: "explorer.nexus.xyz",
+            type: .etherscan(apiBaseUrl: "https://testnet3.explorer.nexus.xyz/api/", txBaseUrl: "testnet3.explorer.nexus.xyz", apiKeys: apiKeys))
+    }
 }
