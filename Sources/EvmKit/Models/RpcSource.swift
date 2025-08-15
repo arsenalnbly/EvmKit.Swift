@@ -111,4 +111,8 @@ public extension RpcSource {
     static func zkSyncRpcHttp() -> RpcSource {
         .http(urls: [URL(string: "https://mainnet.era.zksync.io")!], auth: nil)
     }
+    
+    static func nexusRpcHttp() -> RpcSource {
+        .http(urls: [URL(string: "https://testnet3.rpc.nexus.xyz")!], auth: nil)
+    }
 }
