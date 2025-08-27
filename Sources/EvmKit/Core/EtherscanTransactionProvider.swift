@@ -24,8 +24,8 @@ class EtherscanTransactionProvider {
             try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
         }
 
-        let urlString = "\(baseUrl)/api"
-        print("urlString: \(urlString)")
+//        let urlString = "\(baseUrl)/api"
+//        print("urlString: \(urlString)")
 
         var parameters = params
         parameters["apikey"] = await syncedState.getApiKey()
