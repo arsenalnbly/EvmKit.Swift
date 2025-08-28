@@ -114,7 +114,7 @@ public extension Chain {
     static var nexus: Chain { 
         Chain(
             id: 3940,
-            coinType: 1,
+            coinType: 60,
             syncInterval: 15,
             gasLimit: 10_000_000,
             isEIP1559Supported: true
