@@ -25,13 +25,15 @@ class EtherscanTransactionProvider {
         }
 
         let urlString = "\(baseUrl)/api"
-//        print("urlString: \(urlString)")
+        print("urlString: \(urlString)")
 
         var parameters = params
         parameters["apikey"] = await syncedState.getApiKey()
         parameters["chainid"] = chainId
 
         let json = try await networkManager.fetchJson(url: urlString, method: .get, parameters: parameters, responseCacherBehavior: .doNotCache)
+        
+        print("got json: \(json)")
 
         guard let map = json as? [String: Any] else {
             throw RequestError.invalidResponse
