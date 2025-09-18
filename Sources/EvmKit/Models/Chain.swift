@@ -126,7 +126,7 @@ public extension Chain {
             id: 480,
             coinType: 60,
             syncInterval: 15,
-            gasLimit: 70_000_000,
+            gasLimit: 30_000_000,
             isEIP1559Supported: true
         )
     }

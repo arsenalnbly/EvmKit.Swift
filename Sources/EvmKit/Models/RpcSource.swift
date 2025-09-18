@@ -117,6 +117,6 @@ public extension RpcSource {
     }
     
     static func worldchainRpcHttps() -> RpcSource {
-        .http(urls: [URL(string: "https://worldchain.drpc.org")!], auth: nil)
+        .http(urls: [URL(string: "https://worldchain-mainnet.g.alchemy.com/public")!], auth: nil)
     }
 }
