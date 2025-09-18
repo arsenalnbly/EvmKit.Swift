@@ -120,6 +120,16 @@ public extension Chain {
             isEIP1559Supported: true
         )
     }
+    
+    static var worldchain: Chain {
+        Chain(
+            id: 480,
+            coinType: 60,
+            syncInterval: 15,
+            gasLimit: 70_000_000,
+            isEIP1559Supported: true
+        )
+    }
 
     static var base: Chain {
         Chain(
