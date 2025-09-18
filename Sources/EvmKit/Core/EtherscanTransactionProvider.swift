@@ -33,7 +33,7 @@ class EtherscanTransactionProvider {
 
         let json = try await networkManager.fetchJson(url: urlString, method: .get, parameters: parameters, responseCacherBehavior: .doNotCache)
         
-        print("got json: \(json)")
+        print("got json from \(baseUrl): \(json)")
 
         guard let map = json as? [String: Any] else {
             throw RequestError.invalidResponse
