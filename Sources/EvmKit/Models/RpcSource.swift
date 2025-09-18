@@ -115,4 +115,8 @@ public extension RpcSource {
     static func nexusRpcHttp() -> RpcSource {
         .http(urls: [URL(string: "https://testnet3.rpc.nexus.xyz")!], auth: nil)
     }
+    
+    static func worldchainRpcHttps() -> RpcSource {
+        .http(urls: [URL(string: "https://worldchain.drpc.org")!], auth: nil)
+    }
 }

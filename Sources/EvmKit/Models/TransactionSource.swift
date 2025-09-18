@@ -127,4 +127,11 @@ public extension TransactionSource {
             type: .etherscan(apiBaseUrl: "https://testnet3.explorer.nexus.xyz", txBaseUrl: "https://testnet3.explorer.nexus.xyz", apiKeys: apiKeys)
         )
     }
+    
+    static func worldchainExplorer(apiKeys: [String]) -> TransactionSource {
+        TransactionSource(
+            name: "",
+            type: .etherscan(apiBaseUrl: "https://api.worldscan.org/", txBaseUrl: "https://worldscan.org/", apiKeys: apiKeys)
+        )
+    }
 }
