@@ -130,7 +130,7 @@ public extension TransactionSource {
     
     static func worldchainExplorer(apiKeys: [String]) -> TransactionSource {
         TransactionSource(
-            name: "",
+            name: "worldscan.org",
             type: .etherscan(apiBaseUrl: "https://api.worldscan.org/", txBaseUrl: "https://worldscan.org/", apiKeys: apiKeys)
         )
     }
