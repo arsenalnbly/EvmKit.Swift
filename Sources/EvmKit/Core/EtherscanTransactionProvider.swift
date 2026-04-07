@@ -25,7 +25,7 @@ class EtherscanTransactionProvider {
         }
 
         let urlString = "\(baseUrl)/api"
-        print("urlString: \(urlString)")
+//        print("urlString: \(urlString)")
 
         var parameters = params
         parameters["apikey"] = await syncedState.getApiKey()
