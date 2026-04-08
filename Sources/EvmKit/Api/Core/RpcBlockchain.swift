@@ -141,6 +141,10 @@ extension RpcBlockchain: IBlockchain, INonceProvider {
         return transactionBuilder.transaction(rawTransaction: rawTransaction, signature: signature)
     }
     
+    func sendSigned(signedTx: Data) async throws {
+        _ = try await syncer.fetch(rpc: SendRawTransactionJsonRpc(signedTransaction: signedTx))
+    }
+    
     func encode(rawTransaction: RawTransaction, signature: Signature?) -> Data {
         return transactionBuilder.encode(rawTransaction: rawTransaction, signature: signature)
     }

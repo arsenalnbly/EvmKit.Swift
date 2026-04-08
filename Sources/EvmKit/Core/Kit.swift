@@ -175,6 +175,10 @@ public extension Kit {
         return fullTransactions[0]
     }
     
+    func sendSigned(signedTx: Data) async throws {
+        try await self.blockchain.sendSigned(signedTx: signedTx)
+    }
+    
     func serialize(rawTransaction: RawTransaction, signature: Signature?) -> String {
         let encoded = self.blockchain.encode(rawTransaction: rawTransaction, signature: signature)
         let hex = encoded.map { String(format: "%02x", $0) }.joined()
