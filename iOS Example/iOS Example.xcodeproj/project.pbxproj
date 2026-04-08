@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		7AA6C27A2E7C56C0004B78B2 /* EvmKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7AA6C2792E7C56C0004B78B2 /* EvmKit */; };
 		D05AD9AF2D12C0FF00FF448C /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = D05AD9AE2D12C0FF00FF448C /* GRDB */; };
 		D3604EBB28F3F8B40066C366 /* UIExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = D3604EBA28F3F8B40066C366 /* UIExtensions */; };
 		D36AAAC923A237940065B32B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36AAAAF23A237940065B32B /* Configuration.swift */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA6C27A2E7C56C0004B78B2 /* EvmKit in Frameworks */,
 				D36DFC2928EBDF5B00D2FC62 /* SnapKit in Frameworks */,
 				D36DFC2628EB016100D2FC62 /* EvmKit in Frameworks */,
 				D3604EBB28F3F8B40066C366 /* UIExtensions in Frameworks */,
@@ -168,6 +170,7 @@
 				D36DFC2828EBDF5B00D2FC62 /* SnapKit */,
 				D3604EBA28F3F8B40066C366 /* UIExtensions */,
 				D05AD9AE2D12C0FF00FF448C /* GRDB */,
+				7AA6C2792E7C56C0004B78B2 /* EvmKit */,
 			);
 			productName = EthereumKit;
 			productReference = 607FACD01AFB9204008FA782 /* EvmKit Demo.app */;
@@ -202,7 +205,7 @@
 				D36DFC2728EBDF5B00D2FC62 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				D3604EB928F3F7FA0066C366 /* XCRemoteSwiftPackageReference "UIExtensions" */,
 				D05AD9AD2D12C0FF00FF448C /* XCRemoteSwiftPackageReference "GRDB.swift" */,
-				7AEC5EAA2E5F4516007B376B /* XCRemoteSwiftPackageReference "EvmKit.Swift" */,
+				7AA6C2782E7C56C0004B78B2 /* XCRemoteSwiftPackageReference "EvmKit.Swift" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -420,7 +423,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7AEC5EAA2E5F4516007B376B /* XCRemoteSwiftPackageReference "EvmKit.Swift" */ = {
+		7AA6C2782E7C56C0004B78B2 /* XCRemoteSwiftPackageReference "EvmKit.Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/arsenalnbly/EvmKit.Swift.git";
 			requirement = {
@@ -455,6 +458,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7AA6C2792E7C56C0004B78B2 /* EvmKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AA6C2782E7C56C0004B78B2 /* XCRemoteSwiftPackageReference "EvmKit.Swift" */;
+			productName = EvmKit;
+		};
 		D05AD9AE2D12C0FF00FF448C /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D05AD9AD2D12C0FF00FF448C /* XCRemoteSwiftPackageReference "GRDB.swift" */;

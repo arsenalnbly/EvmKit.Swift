@@ -174,6 +174,12 @@ public extension Kit {
         let fullTransactions = transactionManager.handle(transactions: [transaction])
         return fullTransactions[0]
     }
+    
+    func serialize(rawTransaction: RawTransaction, signature: Signature?) -> String {
+        let encoded = self.blockchain.encode(rawTransaction: rawTransaction, signature: signature)
+        let hex = encoded.map { String(format: "%02x", $0) }.joined()
+        return hex
+    }
 
     var debugInfo: String {
         var lines = [String]()
